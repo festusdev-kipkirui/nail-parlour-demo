@@ -90,11 +90,8 @@ bookingForm.addEventListener("submit", (event) => {
         return;
     }
 
-    // Don't open WhatsApp until the real number is configured.
-    if (!/^\d{10,15}$/.test(salonWhatsAppNumber)) {
+    if (!/^\d{10,15}$/.test(254757873789)) {
         formMessage.textContent =
-            "Demo mode: the salon's WhatsApp number has not been added yet.";
-        return;
     }
 
     const message =
